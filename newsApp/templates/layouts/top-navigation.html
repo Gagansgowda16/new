@@ -1,0 +1,120 @@
+{% load static %}
+<header class="header-area">
+<style>
+    
+    .header-area{
+        background-color: white;
+
+    }
+    .classynav{
+      
+        font-size: 30px;
+
+    }
+
+</style>
+    <!-- Navbar Area -->
+    <div class="newsbox-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container-fluid">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="newsboxNav">
+
+                    <!-- Nav brand -->
+                    <a href="index.html" class="nav-brand"><img src="{% static 'img/core-img/logo.png' %}" alt=""></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+<style>
+.dropbtn {
+  background-color: white;
+  color: #ef1b48;
+  font-family: sans-serif;
+  font-style: bold;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  background-color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:white ; color:#ef1b48 ; size: 25px;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:white ;}
+</style>
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <div class="dropdown">
+
+  <button class="dropbtn">Stories</button>
+  <div class="dropdown-content">
+    <a href="#">Your Stories</a>
+    <a href="#">Social Story</a>
+    <a href="#">Enterprise Story</a>
+    <a href="#">Creators Story</a>
+  </div>
+</div>
+                            <ul>
+                                <!-- <li><a href="/">Stories</a>
+                                    
+                                      <a href="/">My Stories  </a> -->
+                                   
+                                {% for category in categories %}
+                                <li><a href="{% url 'category-post' category.id %}">{{category}}</a></li>
+                                {% endfor %}
+                                {% if not user.id %}
+                                <li><a href="{% url 'login-page' %}">Login</a></li>
+                                {% else %}
+                                <li>
+                                    <a href="#">Dear, {{user.username}}</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% url 'profile-page' %}">Profile</a></li>
+                                        <li><a href="{% url 'new-post' %}">New Post</a></li>
+                                        <li><a href="{% url 'all-posts' %}">All Posts</a></li>
+                                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                                    </ul>
+                                </li>
+                                {% endif %}
+                            </ul>
+
+                        </div>
+                        <!-- Nav End -->
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

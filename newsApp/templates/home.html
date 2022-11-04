@@ -1,0 +1,377 @@
+{% extends 'layouts/base.html' %}{% load static %}
+{% block content %}
+
+<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="keywords" content="Medic, Medical Center" />
+        <meta name="description" content="Responsive Medical Health Template" />
+<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="/static/css1/reset.css">
+        <link rel="stylesheet" type="text/css" href="/static/css1/superfish.css">
+        <link rel="stylesheet" type="text/css" href="/static/css1/prettyPhoto.css">
+        <link rel="stylesheet" type="text/css" href="/static/css1/jquery.qtip.css">
+        <link rel="stylesheet" type="text/css" href="/static/css1/style.css">
+        <link rel="stylesheet" type="text/css" href="/static/css1/menu_styles.css">
+        <link rel="stylesheet" type="text/css" href="/static/css1/animations.css">
+        <link rel="stylesheet" type="text/css" href="/static/css1/responsive.css">
+        <link rel="stylesheet" type="text/css" href="/static/css1/odometer-theme-default.css">
+<!-- slider -->
+            <ul class="slider">
+                <li class="slide">
+                    <img src='/static/images/slider/image_01.jpg' alt='img'>
+                    <div class="slider_content_box">
+                        <ul class="post_details simple">
+                            <li class="category"><a href="category_health.html" title="HEALTH">HEALTH</a></li>
+                            <li class="date">
+                                10:11 PM, Feb 02
+                            </li>
+                        </ul>
+                        <h2><a href="post.html" title="Nuclear Fusion Closer to Becoming a Reality">Nuclear Fusion Closer to Becoming a Reality</a></h2>
+                        <p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src='/static/images/slider/image_02.jpg' alt='img'>
+                    <div class="slider_content_box">
+                        <ul class="post_details simple">
+                            <li class="category"><a href="category_world.html" title="WORLD">WORLD</a></li>
+                            <li class="date">
+                                18:25 PM, Feb 21
+                            </li>
+                        </ul>
+                        <h2><a href="post.html" title="Climate Change Debate While Britain Floods">Climate Change Debate While Britain Floods</a></h2>
+                        <p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src='/static/images/slider/image_03.jpg' alt='img'>
+                    <div class="slider_content_box">
+                        <ul class="post_details simple">
+                            <li class="category"><a href="category_health.html" title="HEALTH">HEALTH</a></li>
+                            <li class="date">
+                                10:11 PM, Feb 02
+                            </li>
+                        </ul>
+                        <h2><a href="post.html" title="The Public Health Crisis Hiding in Our Food">The Public Health Crisis Hiding in Our Food</a></h2>
+                        <p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src='/static/images/slider/image_01.jpg' alt='img'>
+                    <div class="slider_content_box">
+                        <ul class="post_details simple">
+                            <li class="category"><a href="category_world.html" title="WORLD">WORLD</a></li>
+                            <li class="date">
+                                18:25 PM, Feb 21
+                            </li>
+                        </ul>
+                        <h2><a href="post.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a></h2>
+                        <p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src='/static/images/slider/image_02.jpg' alt='img'>
+                    <div class="slider_content_box">
+                        <ul class="post_details simple">
+                            <li class="category"><a href="category_health.html" title="HEALTH">HEALTH</a></li>
+                            <li class="date">
+                                10:11 PM, Feb 02
+                            </li>
+                        </ul>
+                        <h2><a href="post.html" title="New Painkiller Rekindles Addiction Concerns">New Painkiller Rekindles Addiction Concerns</a></h2>
+                        <p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src='/static/images/slider/image_03.jpg' alt='img'>
+                    <div class="slider_content_box">
+                        <ul class="post_details simple">
+                            <li class="category"><a href="category_health.html" title="HEALTH">HEALTH</a></li>
+                            <li class="date">
+                                10:11 PM, Feb 02
+                            </li>
+                        </ul>
+                        <h2><a href="post.html" title="High Altitudes May Aid Weight Control">High Altitudes May Aid Weight Control</a></h2>
+                        <p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
+                    </div>
+                </li>
+            </ul>
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+ 
+
+#slider {
+  position: relative;
+  width: 500px;
+  height: 300px;
+ margin-left:30% ;
+  overflow: hidden;
+ 
+}
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+ 
+ 
+  float: left;
+}
+
+#slider ul li img{
+  width: 500px;
+  height: 265px;
+
+}
+ 
+#slider #prev, #slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+#slider #prev:hover, #slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  </style>
+</head>
+<body>
+  <div id="slider">
+    <ul id="slideWrap"> 
+      <li><img src="https://1.bp.blogspot.com/-GgceYGYr2pk/YPCQp8loxqI/AAAAAAAACXU/Y795AFD-cN8PMV0V2__z2n1B3KFagE8qgCNcBGAsYHQ/s16000/1.jpg"  alt="" class="center"></li>
+      <li><img src="https://1.bp.blogspot.com/-pl0VR_xS5Cw/YPCQp1scezI/AAAAAAAACXc/oB9xc6k8RuY5rPksMSy01f3iUn8zSIFzwCNcBGAsYHQ/s16000/2.jpg"  alt="" class="center"></li>
+      <li><img src="https://1.bp.blogspot.com/-dt6CL2fiBq0/YPCQp0zmK6I/AAAAAAAACXY/0PevDL7pvx87mefb4oCnO613N1UitdicQCNcBGAsYHQ/s16000/3.jpg" alt="" class="center"></li>
+      
+    </ul>
+    <a id="prev" href="#">&#8810;</a>
+    <a id="next" href="#">&#8811;</a>
+  </div>
+
+
+  <script>
+    var responsiveSlider = function() {
+
+var slider = document.getElementById("slider");
+var sliderWidth = slider.offsetWidth;
+var slideList = document.getElementById("slideWrap");
+var count = 1;
+var items = slideList.querySelectorAll("li").length;
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+
+window.addEventListener('resize', function() {
+  sliderWidth = slider.offsetWidth;
+});
+
+var prevSlide = function() {
+  if(count > 1) {
+    count = count - 2;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = 1) {
+    count = items - 1;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+};
+
+var nextSlide = function() {
+  if(count < items) {
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = items) {
+    slideList.style.left = "0px";
+    count = 1;
+  }
+};
+
+next.addEventListener("click", function() {
+  nextSlide();
+});
+
+prev.addEventListener("click", function() {
+  prevSlide();
+});
+
+setInterval(function() {
+  nextSlide()
+}, 5000);
+
+};
+
+window.onload = function() {
+responsiveSlider();  
+}
+
+
+  </script>
+</body> -->
+
+<!-- ##### Intro News Area Start ##### -->
+<section class="intro-news-area section-padding-100-0 mb-70">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Intro News Tabs Area -->
+            <div class="col-12 col-lg-8">
+                <div class="intro-news-tab">
+
+                    <!-- Intro News Filter -->
+                    <div class="intro-news-filter d-flex justify-content-between">
+                        <h5 style="size: 20px;"><b>All The News</b></h5>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav1" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true"><b>Latest</b></a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+
+                        <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav1">
+                            <div class="row">
+                                {% for lpost in latest_top %}
+                                <!-- Single News Area -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="single-blog-post style-2 mb-5">
+                                        <!-- Blog Thumbnail -->
+                                        <div class="blog-thumbnail">
+                                            <a href="{% url 'view-post' lpost.id %}"><img src="{{lpost.banner_path.url}}" alt="{{lpost.title}}"></a>
+                                        </div>
+
+                                        <!-- Blog Content -->
+                                        <div class="blog-content">
+                                            <span class="post-date">{{lpost.date_created|date:"M d, Y"}}</span>
+                                            <a href="{% url 'view-post' lpost.id %}" class="post-title">{{lpost.title}}</a>
+                                            <a href="mailto:{{lpost.user.email}}" target="_blank" class="post-author">By {{lpost.user.username}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                {% for lpost in latest_bottom %}
+                                <!-- Single News Area -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="single-blog-post d-flex style-4 mb-30">
+                                        <!-- Blog Thumbnail -->
+                                        <div class="blog-thumbnail">
+                                            <a href="{% url 'view-post' lpost.id %}"><img src="{{lpost.banner_path.url}}" alt="{{lpost.title}}"></a>
+                                        </div>
+
+                                        <!-- Blog Content -->
+                                        <div class="blog-content">
+                                            <span class="post-date">{{lpost.date_created|date:"M d, Y"}}</span>
+                                            <a href="{% url 'view-post' lpost.id %}" class="post-title">{{lpost.title}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar Widget -->
+            <div class="col-12 col-sm-9 col-md-6 col-lg-4">
+                <div class="sidebar-area">
+
+                   <!-- Add Widget -->
+                   <div class="single-widget-area add-widget mb-30">
+                     <div class="hover01 column">
+                        <figure><img src="static/img/national.avif" />
+                            <span><p><a href="https://yourstory.com/2022/10/exclusive-nse-issues-cease-desist-notices-to-stock-gaming-apps">NSE issues ‘cease & desist’ notices to stock gaming apps...</a></p> </span></figure>
+        <figure><img src="static/img/kk.webp" /> <span><p><a href="https://yourstory.com/2022/10/taiwans-gogoro-plan-pilot-6-second-battery-swapping-india">Taiwan's Gogoro to pilot 6-second battery swapping stations in India...</a></p></span></figure>
+        <figure><img src="static/img/kk1.webp"  /> <span><p><a href="https://yourstory.com/2022/10/swiggy-dineout-diners-nrai-restaurants-mamagoto-smoke-house-deli"> Swiggy Dineout in a pickle as big brand restaurants log out...</a></p></span></figure>
+       
+    <style >
+        .hover01 figure:hover img,h2 span,column div span  {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    width: 400px;
+    height: auto;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    
+
+}
+
+    </style>
+            </div>
+                      <!--   <a href="#">
+                           <figure>  <img src="{% static 'img/bg-img/add3.png' %}" alt=""></figure>
+                        </a>
+                        <a href="#">
+                           <figure>  <img src="{% static 'img/national.avif' %}" alt=""></figure>
+                        </a> -->
+                    </div>
+
+                </div>
+            </div>           
+        </div>
+    </div>
+    
+
+
+</section>
+<!-- ##### Intro News Area End ##### -->
+
+<!-- ##### Add Area Start ##### -->
+<div class="big-add-area mb-100">
+    <div class="container-fluid">
+        <a href="#"><img src="{% static 'img/bg-img/add2.png' %}" alt=""></a>
+    </div>
+</div>
+<div class="background_overlay"></div>
+        <!--js-->
+        <script type="text/javascript" src="/static/js1/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery.ba-bbq.min.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery-ui-1.11.1.custom.min.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery.transit.min.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery.sliderControl.js"></script>
+<script type="text/javascript" src="/static/js1/jquery.timeago.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery.hint.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery.prettyPhoto.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery.qtip.min.js"></script>
+        <script type="text/javascript" src="/static/js1/jquery.blockUI.js"></script>
+        <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="/static/js1/main.js"></script>
+        <script type="text/javascript" src="/static/js1/odometer.min.js"></script>
+<!-- ##### Add Area End ##### -->
+
+{% endblock content %}
